@@ -1,0 +1,98 @@
+* {
+    padding: 20px;
+    font-family: Cambria;
+}
+
+body {
+    padding: 0px;
+    background: url('img/bg1.png');
+}
+
+body background {
+    width: 1px;
+}
+
+/* parte principal de la pagina*/
+h1 {
+    font-family: Comic Sans MS; font-size: 3rem;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+summary {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255, 1);
+}
+
+li img {
+    margin: 0px;
+    padding: 0px;;
+}
+
+div {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    width: 75%;
+    padding: 5px;
+    justify-self: center;
+}
+
+#categorias {
+    width: 100%;
+    padding: 20px;
+    background: none;
+}
+
+/* la lista de paradas por usuarios*/
+
+ol {
+  list-style-type: none;
+  counter-reset: i;
+}
+
+ol li {
+  counter-increment: i;
+}
+
+ol li::before {
+  content: counter(i) ". ";
+  
+  margin-right: 10px;
+}
+
+/* footer*/
+footer {
+    background-color: #D92A2F;
+    border-radius: 10px;
+    padding: 20px; margin: 0px;
+    font-style: italic;
+}
+
+footer p, footer b {
+    padding: 0px;
+}
+
+a {
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+}
